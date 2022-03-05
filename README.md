@@ -1,5 +1,8 @@
 # JavaLock-Thread
 ## Problem 1: Minotaur's Birthday Party
+### How to Run
+I chose a concrete number for part 1. To change the input, locate the main and update the int nGuest = n. 
+
 ### Approach and Experimental Evaluation
 There are two parts that required planning to be able to solve the maze problem.
 1) The algorithm itself to solve the maze riddle
@@ -14,6 +17,8 @@ Now, the second part of the planning (implementing the lock and AtomicBoolean to
 The algorithm in addition of concurrency runs at worst O(n^2). The while-loop in run() keeps iterating until the flag changes to true when all guests have visited atleast once. However since it is concurrent, the threads ordering is random since all threads are simultaneously computing. Hence O(n^2) because same threads are repeating.  
 
 ## Problem 2: Minotaur's Crystal Vase
+### How to Run
+Part 2 is presented with scanner to get input on command line. It is straight forward no need to edit anything on the file.
 ### Approach and Experimental Evaluation
 The approach was very similiar to Minotaur's Maze. Out of the three options, number 2 closely resemblance part 1 question. I implemented reentrant lock with multiple AtomicBoolean and AtomicInteger to keep track of counter so that we can terminate once all guests have atleast visited the room once.
 Part 2 took half of an hour to coded up without any errors. 
