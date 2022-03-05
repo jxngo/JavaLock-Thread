@@ -1,2 +1,5 @@
 # JavaLock-Thread
-Minotaur maze and showroom 
+## Problem 1: Minotaur's Birthday Party
+### Approach
+
+
